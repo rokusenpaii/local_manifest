@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github-ssh" fetch="ssh://git@github.com" />
+  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
+
+  <!-- violet sources-->
+  <project name="roku-senpai/android_device_xiaomi_violet" path="device/xiaomi/violet" remote="github-ssh" revision="6" />
+  <project name="sen-pai06/device-violet-firmware" path="device/xiaomi/violet-firmware" remote="gitlab-ssh" revision="master" />
+  <project name="rokusenpaislab/android_device_xiaomi_violet-kernel" path="device/xiaomi/violet-kernel" remote="github-ssh" revision="r" />
+  <project name="rokusenpaislab/android_kernel_vertigo" path="kernel/xiaomi/violet" remote="github-ssh" revision="master" />
+  <project name="roku-senpai/android_device_xiaomi_violet-sepolicy" path="device/xiaomi/violet-sepolicy" remote="github-ssh" revision="6" />
+  <project name="roku-senpai/android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github-ssh" revision="6" />
+  <project name="hOS7pro/platform_hardware_xiaomi" path="hardware/xiaomi" remote="github-ssh" revision="SaltyIceCream" />
+
+  <!-- hal -->
+  <remove-project name="android_hardware_qcom_audio" />
+  <remove-project name="android_hardware_qcom_display" />
+  <remove-project name="android_hardware_qcom_media" />
+  <remove-project name="hardware_qcom_wlan" />
+  <project name="StyxProject/hardware_qcom_audio" path="hardware/qcom-caf/sm8150/audio" remote="github-ssh" revision="S-sm8150" />
+  <project name="StyxProject/hardware_qcom_display" path="hardware/qcom-caf/sm8150/display"  remote="github-ssh" revision="S-sm8150" />
+  <project name="StyxProject/hardware_qcom_media" path="hardware/qcom-caf/sm8150/media" remote="github-ssh" revision="S-sm8150" />
+  <project name="StyxProject/hardware_qcom_wlan" path="hardware/qcom-caf/wlan"  remote="github-ssh" revision="S" />
+
+  <!-- sepolicy -->
+  <project name="ArrowOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github-ssh" revision="arrow-12.0"/>
+  <project name="ArrowOS/android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="github-ssh" revision="arrow-12.0"/>
+
+</manifest>
