@@ -13,16 +13,6 @@
   <project name="roku-senpai/android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github-ssh" revision="6" />
   <project name="hOS7pro/platform_hardware_xiaomi" path="hardware/xiaomi" remote="github-ssh" revision="SaltyIceCream" />
 
-  <!-- hal -->
-  <remove-project name="android_hardware_qcom_audio" />
-  <remove-project name="android_hardware_qcom_display" />
-  <remove-project name="android_hardware_qcom_media" />
-  <remove-project name="hardware_qcom_wlan" />
-  <project name="StyxProject/hardware_qcom_audio" path="hardware/qcom-caf/sm8150/audio" remote="github-ssh" revision="S-sm8150" />
-  <project name="StyxProject/hardware_qcom_display" path="hardware/qcom-caf/sm8150/display"  remote="github-ssh" revision="S-sm8150" />
-  <project name="StyxProject/hardware_qcom_media" path="hardware/qcom-caf/sm8150/media" remote="github-ssh" revision="S-sm8150" />
-  <project name="StyxProject/hardware_qcom_wlan" path="hardware/qcom-caf/wlan"  remote="github-ssh" revision="S" />
-
   <!-- sepolicy -->
   <project name="ArrowOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github-ssh" revision="arrow-12.0"/>
   <project name="ArrowOS/android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="github-ssh" revision="arrow-12.0"/>
