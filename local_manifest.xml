@@ -5,12 +5,12 @@
   <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
 
   <!-- violet sources-->
-  <project name="roku-senpai/android_device_xiaomi_violet" path="device/xiaomi/violet" remote="github-ssh" revision="6" />
+  <project name="roku-senpai/android_device_xiaomi_violet" path="device/xiaomi/violet" remote="github-ssh" revision="12" />
   <project name="sen-pai06/device-violet-firmware" path="device/xiaomi/violet-firmware" remote="gitlab-ssh" revision="master" />
   <project name="rokusenpaislab/android_device_xiaomi_violet-kernel" path="device/xiaomi/violet-kernel" remote="github-ssh" revision="r" />
   <project name="rokusenpaislab/android_kernel_vertigo" path="kernel/xiaomi/violet" remote="github-ssh" revision="master" />
-  <project name="roku-senpai/android_device_xiaomi_violet-sepolicy" path="device/xiaomi/violet-sepolicy" remote="github-ssh" revision="6" />
-  <project name="roku-senpai/android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github-ssh" revision="6" />
+  <project name="roku-senpai/android_device_xiaomi_violet-sepolicy" path="device/xiaomi/violet-sepolicy" remote="github-ssh" revision="12" />
+  <project name="roku-senpai/android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github-ssh" revision="12-CAF" />
   <project name="hOS7pro/platform_hardware_xiaomi" path="hardware/xiaomi" remote="github-ssh" revision="SaltyIceCream" />
 
   <!-- sepolicy -->
