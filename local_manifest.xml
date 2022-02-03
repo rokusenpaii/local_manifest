@@ -14,7 +14,8 @@
   <project name="hOS7pro/platform_hardware_xiaomi" path="hardware/xiaomi" remote="github-ssh" revision="SaltyIceCream" />
 
   <!-- sepolicy -->
-  <project name="ArrowOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github-ssh" revision="arrow-12.0"/>
-  <project name="ArrowOS/android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="github-ssh" revision="arrow-12.0"/>
+  <project name="P-404/android_device_404_sepolicy" path="device/404/sepolicy" remote="github-ssh" revision="shinka" />
+  <project name="rokusenpaislab/android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="github-ssh" revision="shinka" />
+  <project name="P-404/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github-ssh" revision="shinka"/>
 
 </manifest>
