@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="github-ssh" fetch="ssh://git@github.com" />
-  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
-
   <!-- violet sources-->
-  <project name="roku-senpai/android_device_xiaomi_violet" path="device/xiaomi/violet" remote="github-ssh" revision="12" />
-  <project name="sen-pai06/device-violet-firmware" path="device/xiaomi/violet-firmware" remote="gitlab-ssh" revision="master" />
-  <project name="rokusenpaislab/android_device_xiaomi_violet-kernel" path="device/xiaomi/violet-kernel" remote="github-ssh" revision="r" />
-  <project name="rokusenpaislab/android_kernel_vertigo" path="kernel/xiaomi/violet" remote="github-ssh" revision="master" />
-  <project name="roku-senpai/android_device_xiaomi_violet-sepolicy" path="device/xiaomi/violet-sepolicy" remote="github-ssh" revision="12" />
-  <project name="roku-senpai/android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github-ssh" revision="12-CAF" />
-  <project name="hOS7pro/platform_hardware_xiaomi" path="hardware/xiaomi" remote="github-ssh" revision="SaltyIceCream" />
-
-  <!-- sepolicy -->
-  <project name="P-404/android_device_404_sepolicy" path="device/404/sepolicy" remote="github-ssh" revision="shinka" />
-  <project name="rokusenpaislab/android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="github-ssh" revision="shinka" />
-  <project name="P-404/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github-ssh" revision="shinka"/>
+  <project name="roku-senpai/android_device_xiaomi_violet" path="device/xiaomi/violet" remote="github-ssh" revision="sc" />
+  <project name="roku-senpai/device-violet-firmware" path="device/xiaomi/violet-firmware" remote="gitlab-ssh" revision="master" />
+  <project name="rokusenpaislab/android_kernel_vertigo" path="kernel/xiaomi/violet" remote="github-ssh" revision="test/1" />
+  <project name="roku-senpai/android_device_xiaomi_violet-sepolicy" path="device/xiaomi/violet-sepolicy" remote="github-ssh" revision="test/1" />
+  <project name="roku-senpai/android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github-ssh" revision="test/1" />
 
 </manifest>
