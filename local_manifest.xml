@@ -2,10 +2,10 @@
 <manifest>
 
   <!-- violet sources-->
-  <project name="roku-senpai/android_device_xiaomi_violet" path="device/xiaomi/violet" remote="github-ssh" revision="sc" />
+  <project name="ProtonPlus-Devices/device_xiaomi_violet" path="device/xiaomi/violet" remote="github-ssh" revision="sc-v2" />
   <project name="roku-senpai/device-violet-firmware" path="device/xiaomi/violet-firmware" remote="gitlab-ssh" revision="master" />
   <project name="rokusenpaislab/android_kernel_vertigo" path="kernel/xiaomi/violet" remote="github-ssh" revision="test/1" />
-  <project name="roku-senpai/android_device_xiaomi_violet-sepolicy" path="device/xiaomi/violet-sepolicy" remote="github-ssh" revision="test/1" />
-  <project name="roku-senpai/android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github-ssh" revision="test/1" />
+  <project name="ProtonPlus-Devices/device_xiaomi_violet-sepolicy" path="device/xiaomi/violet-sepolicy" remote="github-ssh" revision="sc-v2" />
+  <project name="ProtonPlus-Devices/vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github-ssh" revision="sc-v2" />
 
 </manifest>
