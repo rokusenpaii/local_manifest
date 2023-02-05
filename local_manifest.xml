@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="ProtonPlus-devices" fetch="https://github.com/ProtonPlus-devices" revision="tm" />
 
-  <!-- violet sources-->
-  <project name="device_xiaomi_violet" path="device/xiaomi/violet" remote="ProtonPlus-devices" revision="stag/tm" />
-  <project name="rokusenpaislab/android_kernel_vertigo" path="kernel/xiaomi/violet" remote="github" revision="main" />
-  <project name="vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="ProtonPlus-devices" revision="stag/tm" />
+  <!-- sweet sources-->
+  <project name="rokusenpaii/SWEET" path="device/xiaomi/sweet" remote="github" revision="dt" />
+  <project name="rokusenpaii/SWEET" path="kernel/xiaomi/sweet" remote="github" revision="kernel" />
+  <project name="rokusenpaii/SWEET" path="vendor/xiaomi/sweet" remote="github" revision="vendor" />
+
+  <!-- clang -->
+  <project name="Nicklas373/aosp-clang" path="prebuilts/clang/host/linux-x86/clang-r412851" remote="github" revision="r412851" />
+  
+  <!-- other -->
+  <project name="android_device_qcom_sepolicy_vndr-legacy-um" path="device/qcom/sepolicy_vndr-legacy-um" remote="arrow" revision="arrow-13.0" />
+  <project name="android_hardware_arrow_compat" path="hardware/arrow/compat" remote="arrow" revision="arrow-13.0" />
 
 </manifest>
