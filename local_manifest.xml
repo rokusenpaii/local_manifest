@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- sweet sources-->
-  <project name="rokusenpaii/SWEET" path="device/xiaomi/sweet" remote="github" revision="dt" />
-  <project name="rokusenpaii/SWEET" path="kernel/xiaomi/sweet" remote="github" revision="kernel" />
-  <project name="rokusenpaii/SWEET" path="vendor/xiaomi/sweet" remote="github" revision="vendor" />
+  <remote name="github-ssh" fetch="ssh://git@github.com" />
+  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
 
-  <!-- clang -->
-  <project name="Nicklas373/aosp-clang" path="prebuilts/clang/host/linux-x86/clang-r412851" remote="github" revision="r412851" />
-  
-  <!-- other -->
-  <project name="android_device_qcom_sepolicy_vndr-legacy-um" path="device/qcom/sepolicy_vndr-legacy-um" remote="arrow" revision="arrow-13.0" />
-  <project name="android_hardware_arrow_compat" path="hardware/arrow/compat" remote="arrow" revision="arrow-13.0" />
+  <!-- remove -->
+  <remove-project name="LineageOS/android_hardware_qcom_bt" />
+
+  <!-- sweet sources-->
+  <project name="rSM6150/android_device_xiaomi_sweet" path="device/xiaomi/sweet" remote="github-ssh" revision="awaken" />
+  <project name="rokusenpaii/android_kernel_xiaomi_vertigo" path="kernel/xiaomi/sweet" remote="github-ssh" revision="tm" />
+  <project name="rSM6150/android_vendor_xiaomi_sweet" path="vendor/xiaomi/sweet" remote="github-ssh" revision="awaken" />
+  <project name="Ad1tyaS1ngh/hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="T" />
+
+  <project name="roku-senpai/vendor_xiaomi_sweet-miuicamera" path="vendor/xiaomi/sweet-miuicamera" remote="gitlab-ssh" revision="tm" />
 
 </manifest>

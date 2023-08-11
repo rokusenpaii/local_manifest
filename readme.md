@@ -1,10 +1,10 @@
 ```bash
-git clone https://github.com/rokusenpaii/local_manifest.git --single-branch  --branch=sweet .repo/local_manifests 
+git clone https://github.com/rokusenpaii/local_manifest.git --single-branch  --branch=sweetAwaken .repo/local_manifests 
 ```
 or
 
 ```bash
-git clone git@github.com:rokusenpaii/local_manifest.git --single-branch  --branch=sweet .repo/local_manifests 
+git clone git@github.com:rokusenpaii/local_manifest.git --single-branch  --branch=sweetAwaken .repo/local_manifests 
 ```
 
 ```bash
