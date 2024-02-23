@@ -1,18 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="github-ssh" fetch="ssh://git@github.com" />
-  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
+  <remote  name="aospa"
+           fetch="https://github.com/AOSPA"
+           review="gerrit.aospa.co"
+           revision="uvite"/>
 
-  <!-- remove -->
-  <remove-project name="LineageOS/android_hardware_qcom_bt" />
+  <remote  name="blobs"
+           fetch="https://github.com/ThankYouMario"
+           revision="uvite" />
 
-  <!-- sweet sources-->
-  <project name="rSM6150/android_device_xiaomi_sweet" path="device/xiaomi/sweet" remote="github-ssh" revision="awaken" />
-  <project name="rokusenpaii/android_kernel_xiaomi_vertigo" path="kernel/xiaomi/sweet" remote="github-ssh" revision="tm" />
-  <project name="rSM6150/android_vendor_xiaomi_sweet" path="vendor/xiaomi/sweet" remote="github-ssh" revision="awaken" />
-  <project name="Ad1tyaS1ngh/hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="T" />
+  <remote  name="blobs-gitlab"
+           fetch="https://gitlab.com/ThankYouMario"
+           revision="uvite" />
 
-  <project name="roku-senpai/vendor_xiaomi_sweet-miuicamera" path="vendor/xiaomi/sweet-miuicamera" remote="gitlab-ssh" revision="tm" />
+  <remote name="clo-la"
+          fetch="https://git.codelinaro.org/clo/la"
+          sync-c="true"
+          sync-tags="false" />
 
+<remove-project name="platform/hardware/qcom/gps"/>
+<remove-project name="LineageOS/android_hardware_xiaomi"/>
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="aospa" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+ <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="blobs" />
+  <project path="vendor/qcom/opensource/core-utils" name="android_vendor_qcom-opensource_core-utils" remote="aospa" />
+    <project 
+        remote="aospa"
+        name="android_device_xiaomi_marble"
+        path="device/xiaomi/marble"
+        revision="uvite"
+    />
+    <project 
+        remote="aospa"
+        name="android_device_xiaomi_marble-kernel"
+        path="device/xiaomi/marble-kernel"
+        revision="uvite"
+        clone-depth="1"
+    />
+
+    <project 
+        remote="aospa"
+        name="android_hardware_qcom_gps"
+        path="hardware/qcom/gps"
+        revision="uvite-8450"
+    />
+
+    <project 
+        remote="aospa"
+        name="android_hardware_xiaomi"
+        path="hardware/xiaomi"
+        revision="uvite"
+    />
+    <project 
+        remote="aospa"
+        name="android_vendor_nxp_opensource_halimpl"
+        path="vendor/nxp/opensource/halimpl"
+        revision="uvite-8450"
+    />
+    <project 
+        remote="aospa"
+        name="android_vendor_nxp_opensource_hidlimpl"
+        path="vendor/nxp/opensource/hidlimpl"
+        revision="uvite-8450"
+    />
+    <project 
+        remote="aospa"
+        name="android_vendor_qcom_opensource_arpal-lx"
+        path="vendor/qcom/opensource/pal"
+        revision="uvite-8450"
+    />
+    <project 
+        remote="blobs"
+        name="proprietary_vendor_xiaomi"
+        path="vendor/xiaomi"
+        revision="uvite"
+        clone-depth="1"
+    />
+    <project 
+        remote="blobs-gitlab"
+        name="proprietary_vendor_xiaomi_camera"
+        path="vendor/xiaomi/camera"
+        revision="uvite-marble"
+        clone-depth="1"/>
+  <project remote="clo-la" name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="b8a82838dcb4cde55aae8b0bc9e0b77eb1ac3d4c" upstream="refs/heads/atel-sys.lnx.13.0.r3-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project remote="clo-la" name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="e48755e2060da21c881259bf202bb2b94944998a" upstream="refs/heads/nfc-sysintf.lnx.13.0.r2-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
+  <project remote="clo-la" name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="f1575f8937b6b55643bdb2c4b58810b7c0a2823e" upstream="refs/heads/nfc-sys.lnx.13.0.r2-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project remote="clo-la" name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" revision="9bf44120233d7c2d65e65760484c8a694f610788" upstream="refs/heads/nfc-sys.lnx.13.0.r2-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project remote="clo-la" name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" revision="22721b07e60104ebbb304f8e974b9676640dd47f" upstream="refs/heads/nfc-sys.lnx.13.0.r2-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_exc_L3">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/nfc-system-product.mk" src="nfc_system_product.mk"/>
+  </project>
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="aospa" />
 </manifest>
